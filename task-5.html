@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css">
+    <title>task_5</title>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Welcome to Random joke generator page</h1>
+        <p id="jkcon"></p>
+        <button id="btn">Click here to get a random joke</button>
+
+    <div>
+  
+
+
+<script>
+
+        const  jokeCont= document.getElementById("jkcon");
+        const btn = document.getElementById("btn");
+        const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
+let getJoke = () => {
+    jokeCont.classList.remove("hide");
+    fetch(url)
+    .then(data => data.json())
+    .then(item =>{
+        jokeCont.textContent = `${item.joke}`;
+        jokeCont.classList.add("hide");
+    });
+}
+btn.addEventListener("click",getJoke);
+
+
+
+
+
+
+       
+
+      
+    </script>
+
+
+
+</body>
+</html>

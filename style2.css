@@ -1,0 +1,59 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+body{
+    background-image: url("images/backgound_for_task5.jpg");
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+    padding:20px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+  color:#6d0d10;
+}
+
+.container{
+    width:80vw;
+    padding:50px 40px;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%; 
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
+    border:solid 2px #afafd6;
+}
+p{
+    font-size: 20px;
+    color:rgb(3, 67, 123);
+    font-weight: 400;
+    text-align: center;
+    word-wrap:break-word;
+    margin: 30px 3px;
+}
+button{
+    display: block;
+    background-color: #e2a1a3;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    color: #0b0b0a;
+    font-weight: 600;
+    padding: 12px 25px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.hide{
+    opacity: 1;
+    transition: opacity 1.5s;
+}
